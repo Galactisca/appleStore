@@ -15,28 +15,28 @@ function initial(){
             }
         }
     }
-    let tr = document.createElement("tr");
-    tr.setAttribute("id", "subtotalRow");
+    // let tr = document.createElement("tr");
+    // tr.setAttribute("id", "subtotalRow");
 
-    let td= document.createElement("td");
-    td.setAttribute("colspan", "4");
+    // let td= document.createElement("td");
+    // td.setAttribute("colspan", "4");
 
-    let subtotal = document.createTextNode("Subtotal");
-    td.appendChild(subtotal);
-    tr.appendChild(td);
+    // let subtotal = document.createTextNode("Subtotal");
+    // td.appendChild(subtotal);
+    // tr.appendChild(td);
 
-    let td2 = document.createElement("td");
-    td2.setAttribute("id", "subtotal");
-    td2.setAttribute("colspan", "2");
-    let sum = 0;
-    for (let i=0; i<PRODUCT_LIST.length; i++){
-    if (window.sessionStorage.getItem(PRODUCT_LIST[i]) != 0){
-        sum += parseInt(window.sessionStorage.getItem(PRODUCT_LIST[i])) * data[PRODUCT_LIST[i]].price;
-        }
-    }
-    document.getElementById("cartList").appendChild(tr);
-    td2.appendChild(document.createTextNode(sum));
-    tr.appendChild(td2);
+    // let td2 = document.createElement("td");
+    // td2.setAttribute("id", "subtotal");
+    // td2.setAttribute("colspan", "2");
+    // let sum = 0;
+    // for (let i=0; i<PRODUCT_LIST.length; i++){
+    // if (window.sessionStorage.getItem(PRODUCT_LIST[i]) != 0){
+    //     sum += parseInt(window.sessionStorage.getItem(PRODUCT_LIST[i])) * data[PRODUCT_LIST[i]].price;
+    //     }
+    // }
+    // document.getElementById("cartList").appendChild(tr);
+    // td2.appendChild(document.createTextNode(sum));
+    // tr.appendChild(td2);
     
     let cartToggle = document.getElementById("cartToggle");
     cartToggle.addEventListener("click", toggleCart);
@@ -51,14 +51,14 @@ function addToCart(name){
 
 function toggleCart(){
     cartMenu.classList.toggle("open");
-    let subtotal = document.getElementById("subtotal");
-    let sum = 0;
-    for (let i=0; i<PRODUCT_LIST.length; i++){
-    if (window.sessionStorage.getItem(PRODUCT_LIST[i]) != 0){
-        sum += parseInt(window.sessionStorage.getItem(PRODUCT_LIST[i])) * data[PRODUCT_LIST[i]].price;
-        }
-    }
-    subtotal.innerHTML = sum;
+    // let subtotal = document.getElementById("subtotal");
+    // let sum = 0;
+    // for (let i=0; i<PRODUCT_LIST.length; i++){
+    // if (window.sessionStorage.getItem(PRODUCT_LIST[i]) != 0){
+    //     sum += parseInt(window.sessionStorage.getItem(PRODUCT_LIST[i])) * data[PRODUCT_LIST[i]].price;
+    //     }
+    // }
+    // subtotal.innerHTML = sum;
 
 }
 
@@ -110,16 +110,16 @@ function updateCart(item){
         td6.appendChild(btn);
         tr.appendChild(td6);
 
-        document.getElementById("cartList").insertBefore(tr, document.getElementById("subtotalRow"));
+        // document.getElementById("cartList").insertBefore(tr, document.getElementById("subtotalRow"));
     } else {
         document.getElementById(item + "Amount").innerHTML = window.sessionStorage.getItem(item);
         document.getElementById(item + "total").innerHTML = data[item].price * parseInt(window.sessionStorage.getItem(item));
     }
 }
 
-function buy(){
-    alert("Thank you for purchasing at Apple Store");
-}
+// function buy(){
+//     alert("Thank you for purchasing at Apple Store");
+// }
 
 let data = {
     MA29 :{
