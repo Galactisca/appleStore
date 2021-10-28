@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Apple Store</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -11,27 +11,36 @@
     <body>
         <nav>
             <a>Home</a>
-            <ul class="nav-list">
-                <li>
-                    <a>Mac</a>
-                </li>
-                <li>
-                    <a>Ipad</a>
-                </li>
-                <li>
-                    <a>Iphone</a>
-                </li>
-                <li>
-                    <a>Airpods</a>
-                </li>
-            </ul>
-            <a>Cart</a>
+            
+            <a id="cartToggle">Cart</a>
         </nav>
+        <div class="title">
+            Welcome to Apple Store
+        </div>
         <main>
-            <div class="mac">
+            <div class="nav-list-container">
+                <ul class="nav-list">
+                    <li>
+                        <h4>Categories</h3>
+                    </li>
+                    <li>
+                        <a>Mac</a>
+                    </li>
+                    <li>
+                        <a>Ipad</a>
+                    </li>
+                    <li>
+                        <a>Iphone</a>
+                    </li>
+                    <li>
+                        <a>Airpods</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-container">
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/11/12/637407967465471535_mba-2020-gold-1.png"></image>
-                    <div class="product-name">Macbook Air</div>
+                    <div class="product-name">Macbook Air 128GB</div>
                     <div class="produc-price"> 29.000.000đ </div>
                     <button class="btn-cart" onclick="addToCart('MA29')">Add to cart</button>
                 </div>
@@ -47,8 +56,8 @@
                     <div class="produc-price"> 40.000.000đ </div>
                     <button class="btn-cart" onclick="addToCart('MP1340')">Add to cart</button>
                 </div>
-            </div>
-            <div class="ipad">
+           
+           
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/4/21/637546068956139190_ipad-pro-12-9-cell-xam-1.jpg"></image>
                     <div class="product-name">iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB</div>
@@ -74,15 +83,27 @@
                     <button class="btn-cart" onclick="addToCart('IPB10')">Add to cart</button>
                 </div>
             </div>
-            <!-- <div class="product">
-                <image class="product-img" src="""></image>
-                <div class="product-name">Macbook Pro 13inch M1</div>
-                <div class="produc-price"> 40.000.000đ </div>
-                <button class="btn-cart" onclick="addToCart('MP1340')">Add to cart</button>
-            </div> -->
+            <div class="cart-menu">
+                <div class="cart-title">
+                    Your cart
+                </div>
+                <div class="cart-list-container">
+                <table id="cartList">
+                    <tr><th>Product</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+                </div>
+            </div>
+
+            
         </main>
         <footer>
-                <ul class="cart"></ul>
+            
         </footer>
         <script src="main.js" async defer></script>
     </body>
