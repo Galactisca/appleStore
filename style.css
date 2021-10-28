@@ -2,6 +2,7 @@
     border: 0px;
     margin: 0;
     padding: 0;
+    font-family: 'Noto Serif', serif;
 }
 
 nav {
@@ -24,54 +25,83 @@ nav {
     list-style: none;
 }
 
+.nav-list li {
+    padding-left: 10px;
+}
+
 .title {
     width: 100vw;
     height: 12vh;
     text-align: center;
     padding-top: 6vh;
-    font-size: 3rem;
+    font-size: 2em;
     font-weight: bolder;
 }
 
 main {
     display: grid;
-    grid-template-columns: 10vw 90vw;
+    grid-template-columns: 10vw 89vw;
     grid-template-rows: auto;
-    column-gap: 2vw;
+    column-gap: 1vw;
 }
 
 .nav-list-container{
     display: flex;
     grid-column: 1/2;
-    background-color: lightpink;
+    background-color: white;
     justify-content: flex-start;
    
 }
 
 .content-container{
     grid-column: 2/3 ;
-    background-color: lightseagreen;
+    background-color: white;
     display: grid;
     grid-template-columns:  repeat(4, 24%);
     grid-template-rows:  auto auto;
     gap: 1% 1%;
+    padding: 20px;
 }
 
 .product-img{
+    grid-row: 1/2;
+    grid-column: 1/2;
     width: 18vw;
     height: auto;
 }
 
 .product {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70% 10% 10% 10%;
     justify-content: center;
     align-items: center;
-} 
+}
+
+.product-name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.product-price {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+}
 
 .btn-cart {
-    width: 20vw;
+    
+    background-color: #0071e3;
+    color: white;
+}
+
+.cart-btn-container{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart-menu {
@@ -86,6 +116,8 @@ main {
     align-items: center;
     font-size: 2rem;
 }
+
+
 
 table, th, td {
     border: 1px solid lightgray;
@@ -124,9 +156,21 @@ body {
 .open {
     display:initial;
     position: absolute;
-    top: 4vh;
+    top: 6vh;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: white;
+}
+
+.btn-buy-container{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    height: 10vh;
+    align-items: flex-end;
+}
+
+.btn-buy-container button{
+    width: 10vw;
 }

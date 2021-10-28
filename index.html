@@ -7,6 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -42,45 +45,60 @@
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/11/12/637407967465471535_mba-2020-gold-1.png"></image>
                     <div class="product-name">Macbook Air 128GB</div>
                     <div class="produc-price"> 29.000.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('MA29')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('MA29')">Add to cart</button>
+                    </div>
                 </div>
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/10/19/637702684259566248_macbook-pro-16-2021-bac-1.jpg"></image>
                     <div class="product-name">Macbook Pro 16inch M1 Max</div>
                     <div class="produc-price"> 66.000.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('MP1666')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('MP1666')">Add to cart</button>
+                    </div>
                 </div>
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/11/12/637408000895490753_mbp-2020-m1-gray-2.png"></image>
                     <div class="product-name">Macbook Pro 13inch M1</div>
                     <div class="produc-price"> 40.000.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('MP1340')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('MP1340')">Add to cart</button>
+                    </div>
                 </div>
-           
-           
+
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/4/21/637546068956139190_ipad-pro-12-9-cell-xam-1.jpg"></image>
                     <div class="product-name">iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB</div>
                     <div class="produc-price"> 35.000.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('IPP35')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('IPP35')">Add to cart</button>
+                    </div>
                 </div>
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/12/8/637430344008900880_ipad-air-10-9-2020-wi-fi-cellular-xanh-1.png"></image>
                     <div class="product-name">iPad Air 10.9 2020 Wi-Fi + Cellular 64GB</div>
                     <div class="produc-price"> 20.800.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('IPA2208')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('IPA2208')">Add to cart</button>
+                    </div>
                 </div>
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673401506930865_ipad-mini-8-3-2021-wi-fi-5g-xam-1.jpg"></image>
                     <div class="product-name">iPad Mini 8.3 2021 Wi-Fi 5G 64GB</div>
                     <div class="produc-price"> 20.000.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('IPM20')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('IPM20')">Add to cart</button>
+ 
+                    </div>
                 </div>
                 <div class="product">
                     <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673417056583747_ipad-10-2-2021-wi-fi-bac-1.jpg"></image>
                     <div class="product-name">iPad 10.2 2021 Wi-Fi 64GB</div>
                     <div class="produc-price"> 10.000.000đ </div>
-                    <button class="btn-cart" onclick="addToCart('IPB10')">Add to cart</button>
+                    <div class="btn-cart-container">
+                        <button class="btn-cart" onclick="addToCart('IPB10')">Add to cart</button>
+                    </div>
+                    
                 </div>
             </div>
             <div class="cart-menu">
@@ -97,6 +115,10 @@
                         <th>Delete</th>
                     </tr>
                 </table>
+                
+                </div>
+                <div class="btn-buy-container">
+                    <button onclick="buy()">Buy</button>
                 </div>
             </div>
 
