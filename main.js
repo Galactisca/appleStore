@@ -169,7 +169,33 @@ let data = {
         price: 10000000,
         src:   "https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673417056583747_ipad-10-2-2021-wi-fi-bac-1.jpg",
         des:   "Lorem Ipsum"   
-    }
+    //} , <--nho them dau phay cho nay
+
+    // IP13PM :{
+    //     name: "iPhone 13 Pro Max 128GB",
+    //     price: 34000000,
+    //     src: "https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673217819795830_iphone-13-pro-max-xam-1.jpg",
+    //     des: "Lorem Ipsum"
+    // }, 
+    
+    // IP13 :{
+    //     name: "iPhone 13 128GB",
+    //     price: 25000000,
+    //     src: "https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673230231791121_iphone-13-mini-den-1.jpg",
+    //     des: "Lorem Ipsum"
+    // },
+    // IP13P :{
+    //     name: "iPhone 13 Pro 128GB",
+    //     price: 31000000,
+    //     src: "https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/16/637673860095973501_iphone-13-pro-max-bac-1.jpg",
+    //     des: "Lorem Ipsum"
+    // },
+    // IP12PM :{
+    //     name: "iPhone 12 Pro Max 128GB",
+    //     price: 31000000,
+    //     src: "https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/10/14/637382725406081030_ip-12-pro-max-vang-1.png",
+    //     des: "Lorem Ipsum"
+    // }
     
 };
 
