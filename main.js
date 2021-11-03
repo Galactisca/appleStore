@@ -3,18 +3,10 @@ const iphoneBox = document.getElementsByClassName("iphone-box")[0];
 const ipadBox = document.getElementsByClassName("ipad-box")[0];
 var products;
 // read json
-function readJson() {
-    fetch('./data.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            products = data;
-            getJsonData(data);
-        })
-        .catch(err => {
-            alert("Can't read JSON")
-        });
+const readJson = async () => {
+	const response = await fetch('https://61814ec932c9e20017804764.mockapi.io/products');
+	const myJson = await response.json(); //extract JSON from the http response
+	getJsonData(myJson);
 }
 
 function getJsonData(data){
@@ -37,18 +29,18 @@ function addProductToWeb(object){
     product.appendChild(newElement);
 }
 
-// function checkLogin(){
-//     if (!window.localStorage.getItem("UAT")){
-//         window.location.assign("login.html");
-//     } else {
-//         //loadData();
-//     }
-// }
+function checkLogin(){
+    if (!window.localStorage.getItem("UAT")){
+        window.location.assign("login.html");
+    } else {
+        //loadData();
+    }
+}
 
-// function logout(){
-//     window.localStorage.removeItem("UAT");
-//     window.location.assign("login.html");
-// }
+function logout(){
+    window.localStorage.removeItem("UAT");
+    window.location.assign("login.html");
+}
 
 // money_format
 function formatMoney(x){
@@ -84,7 +76,7 @@ function addToCart(productId) {
 
 function start(){
     
-    // checkLogin();
+    checkLogin();
     readJson();
     
 }
