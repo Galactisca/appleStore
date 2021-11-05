@@ -4,27 +4,16 @@
     justify-content: center;
     align-items: center;
     padding-top: 5vh;
+    font-size: 30px;
 }
 
 
 .history-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    grid-template-columns: repeat(4, 25%);
-}
-
-#productInfo {
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
 }
 
 .history-img{
@@ -32,6 +21,18 @@
     background-size: cover;
     height: 100px;
     width: 100px;
+}
+
+.history-date-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.history-item {
+    display: grid;
+    grid-template-columns: 25% 1fr 15% 15%;
+    row-gap: 2vh;
 }
 
 
